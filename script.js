@@ -4,7 +4,6 @@ const wrapper = document.querySelector('.wrapper');
 const left = document.querySelector('.left');
 const right = document.querySelector('.right');
 
-
 let index = 0;
 let data =
     [
@@ -12,8 +11,6 @@ let data =
         "https://images.theconversation.com/files/305837/original/file-20191209-90562-nsnsun.jpg?ixlib=rb-1.1.0&rect=284%2C696%2C1934%2C965&q=45&auto=format&w=1356&h=668&fit=crop",
         "https://www.featureforest.ee/wp-content/uploads/2016/10/bg6.jpg",
     ]
-
-
 right.onclick = () =>{
     index++;
     if(index > data.length - 1){
@@ -50,6 +47,7 @@ left.onclick = () => {
         wrapper.children[wrapper.children.length - 1].remove();
     }, 500)
 }
+
 
 
 
